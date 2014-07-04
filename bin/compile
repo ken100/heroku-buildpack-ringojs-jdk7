@@ -4,7 +4,7 @@
 # fail fast
 set -e
 
-echo -n "heroku-buildpack-ringojs-jdk7 compile start"
+echo "heroku-buildpack-ringojs-jdk7 compile start"
 
 BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 # parse args
@@ -73,4 +73,4 @@ if [ ! -f Procfile ]; then
   echo "       ringo server.js"
 fi
 
-echo -n "heroku-buildpack-ringojs-jdk7 compile end"
+echo "heroku-buildpack-ringojs-jdk7 compile end"
