@@ -4,7 +4,7 @@
 # fail fast
 set -e
 
-logger -p user.notice -t "slugc[$$]" "language_pack_java java_compile_start"
+echo -n "heroku-buildpack-ringojs-jdk7 compile start"
 
 BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 # parse args
@@ -73,4 +73,4 @@ if [ ! -f Procfile ]; then
   echo "       ringo server.js"
 fi
 
-logger -p user.notice -t "slugc[$$]" "language_pack_java java_compile_end $LOGGER_FLAGS"
+echo -n "heroku-buildpack-ringojs-jdk7 compile end"
